@@ -7,17 +7,16 @@
 </head>
 <body>
     <div id="app" v-cloak>
-        <p>{{ fullName }}</p> <!-- Changed fullName() to fullName if it's a computed property -->
+        <p>{{ fullName }}</p>
         <hr />
 
-        <label>First Name</label>
-        <input type="text" v-model="firstName" />
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" v-model="firstName" aria-label="First Name"/>
 
-        <label>Last Name</label>
-        <input type="text" v-model="lastName" /> <!-- Added v-model for two-way binding -->
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" v-model="lastName" aria-label="Last Name"/>
     
     </div>
-    <!-- Removed the second 'div' as it seems unnecessary for this example -->
     
     <script src="https://unpkg.com/vue@3"></script>
     <script src="app.js"></script>
