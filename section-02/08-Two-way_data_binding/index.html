@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app" v-cloak>
+        <p>{{ fullName }}</p> <!-- Changed fullName() to fullName if it's a computed property -->
+        <hr />
+
+        <label>First Name</label>
+        <input type="text" v-model="firstName" />
+
+        <label>Last Name</label>
+        <input type="text" v-model="lastName" /> <!-- Added v-model for two-way binding -->
+    
+    </div>
+    <!-- Removed the second 'div' as it seems unnecessary for this example -->
+    
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="app.js"></script>
+</body>
+</html>
