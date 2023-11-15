@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app" v-cloak>
+        <p>{{ fullName() }}</p>
+        <p><a :href="url" target="_blank" rel="noopener noreferrer">Google</a></p>
+        <hr />
+
+        <label>First Name</label>
+        <input type="text" v-model="firstName" aria-label="First Name"/>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" v-model="lastName" aria-label="Last Name"/>
+    
+    </div>
+    
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="app.js"></script>
+</body>
+</html>
